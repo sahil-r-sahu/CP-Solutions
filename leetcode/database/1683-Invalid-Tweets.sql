@@ -1,3 +1,4 @@
 SELECT tweet_id
 FROM Tweets
-WHERE CHAR_LENGTH(content) > 15;
+GROUP BY tweet_id, content
+HAVING LENGTH(content) > 15;
