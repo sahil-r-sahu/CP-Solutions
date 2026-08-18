@@ -3,7 +3,7 @@
 
 Synced automatically by SolveBase.
 
-**Total solved: 5**
+**Total solved: 6**
 
 ## Codeforces
 
@@ -20,11 +20,11 @@ Solutions by [Sahil_verz](https://codeforces.com/profile/Sahil_verz), organized 
 
 Solutions organized by primary topic folder.
 
-**Solved: 1**
+**Solved: 2**
 
 | Topic | Solved |
 | --- | --- |
-| [database](./leetcode/database) | 1 |
+| [database](./leetcode/database) | 2 |
 
 
 ## CSES
