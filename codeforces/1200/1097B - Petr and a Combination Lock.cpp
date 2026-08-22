@@ -1,44 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool possible(vector<int> &a, int idx, int sum)
-{
-    if (idx == a.size())
-    {
-        return sum % 360 == 0;
-    }
-    // Choose clockwise
-    if (possible(a, idx + 1, sum + a[idx]))
-    {
-        return true;
-    }
-
-    // Choose counterclockwise
-    if (possible(a, idx + 1, sum - a[idx]))
-    {
-        return true;
-    }
-    return false;
-}
-
 int main()
 {
     int n;
     cin >> n;
 
     vector<int> a(n);
-
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
 
-    if (possible(a, 0, 0))
+    vector<int> sums = {0};
+    for (int x : a)
     {
-        cout << "YES\n";
+        vector<int> next;
+        for (int sum : sums)
+        {
+            next.push_back(sum + x);
+            next.push_back(sum - x);
+        }
+
+        sums = next;
     }
-    else
+
+    for (int sum : sums)
     {
-        cout << "NO\n";
+        if (sum % 360 == 0)
+        {
+            cout << "YES\n";
+            return 0;
+        }
     }
+
+    cout << "NO\n";
 }
