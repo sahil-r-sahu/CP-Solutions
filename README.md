@@ -3,18 +3,18 @@
 
 Synced automatically by SolveBase.
 
-**Total solved: 14**
+**Total solved: 15**
 
 ## Codeforces
 
 Solutions by [Sahil_verz](https://codeforces.com/profile/Sahil_verz), organized by difficulty rating.
 
-**Solved: 12**
+**Solved: 13**
 
 | Difficulty | Solved |
 | --- | --- |
 | [900](./codeforces/900) | 1 |
-| [1200](./codeforces/1200) | 11 |
+| [1200](./codeforces/1200) | 12 |
 
 
 ## LeetCode
@@ -61,5 +61,5 @@ Solutions organized by difficulty level.
 | — | 0 |
 
 
-_Last updated: 2026-09-06_
+_Last updated: 2026-09-07_
 <!-- /cf-sync -->
